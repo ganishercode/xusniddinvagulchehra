@@ -40,7 +40,7 @@
   <!-- ============ HERO SPLIT ============ -->
   <section class="hero" id="home">
     <div class="hero-photo">
-      <img src="images/hero.jpg" alt="Xusniddin & Gulchehra">
+      <img src="hero.jpg" alt="Xusniddin & Gulchehra">
     </div>
     <div class="hero-content">
       <p class="hero-subtitle">Sizni kutib qolamiz!</p>
@@ -137,7 +137,7 @@
       </div>
 
       <!-- VENUE IMAGE -->
-      <img src="images/asr.jpg" alt="Asr to'yxonasi"
+      <img src="asr.jpg" alt="Asr to'yxonasi"
         style="width:100%; height:clamp(180px, 30vw, 250px); object-fit:cover; object-position:center 18%; border-radius:12px; margin-bottom:20px; border: 1px solid var(--gold-soft); cursor: pointer;"
         class="reveal-scale" onclick="openLB(4)">
 
@@ -238,28 +238,28 @@
       <div class="line"></div>
     </div>
     <div class="gallery-grid">
-      <div class="gallery-item reveal-scale stagger-1" onclick="openLB(0)"><img src="images/venue.png" alt="">
+      <div class="gallery-item reveal-scale stagger-1" onclick="openLB(0)"><img src="venue.png" alt="">
         <div class="g-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
             stroke-linejoin="round">
             <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
             <circle cx="12" cy="12" r="3" />
           </svg></div>
       </div>
-      <div class="gallery-item reveal-scale stagger-2" onclick="openLB(1)"><img src="images/rings.png" alt="">
+      <div class="gallery-item reveal-scale stagger-2" onclick="openLB(1)"><img src="rings.png" alt="">
         <div class="g-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
             stroke-linejoin="round">
             <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
             <circle cx="12" cy="12" r="3" />
           </svg></div>
       </div>
-      <div class="gallery-item reveal-scale stagger-3" onclick="openLB(2)"><img src="images/bouquet.png" alt="">
+      <div class="gallery-item reveal-scale stagger-3" onclick="openLB(2)"><img src="bouquet.png" alt="">
         <div class="g-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
             stroke-linejoin="round">
             <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
             <circle cx="12" cy="12" r="3" />
           </svg></div>
       </div>
-      <div class="gallery-item reveal-scale stagger-1" onclick="openLB(3)"><img src="images/decor.png" alt="">
+      <div class="gallery-item reveal-scale stagger-1" onclick="openLB(3)"><img src="decor.png" alt="">
         <div class="g-overlay"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
             stroke-linejoin="round">
             <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
@@ -321,7 +321,7 @@
     document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el => io.observe(el));
 
     /* ===== LIGHTBOX ===== */
-    const imgs = ['images/venue.png', 'images/rings.png', 'images/bouquet.png', 'images/decor.png', 'images/asr.jpg'];
+    const imgs = ['venue.png', 'rings.png', 'bouquet.png', 'decor.png', 'asr.jpg'];
     let ci = 0;
     function openLB(i) { ci = i; document.getElementById('lbImg').src = imgs[i]; document.getElementById('lightbox').classList.add('active'); document.body.style.overflow = 'hidden' }
     function closeLB() { document.getElementById('lightbox').classList.remove('active'); document.body.style.overflow = '' }
