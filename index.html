@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Xusniddin & Gulchehra</title>
+  <meta name="description" content="Xusniddin va Gulchehra nikoh to'yiga taklifnoma. 15-Sentabr, 2026">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23b8860b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='9' cy='12' r='6'/%3E%3Ccircle cx='15' cy='12' r='6'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="particles" id="particles"></div>
+
+  <!-- MUSIC -->
+  <button class="music-btn" id="musicBtn" title="Musiqa">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18V5l12-2v13" />
+      <circle cx="6" cy="18" r="3" />
+      <circle cx="18" cy="16" r="3" />
+    </svg>
+    <div class="music-wave"></div>
+  </button>
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music/audio1.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- NAV -->
+  <nav class="main-nav" id="mainNav">
+    <div class="nav-inner">
+      <a href="#about" class="nav-link">Taklifnoma</a>
+      <a href="#venue" class="nav-link">To'yxona</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO SPLIT ============ -->
+  <section class="hero" id="home">
+    <div class="hero-photo">
+      <img src="images/hero.jpg" alt="Xusniddin & Gulchehra">
+    </div>
+    <div class="hero-content">
+      <p class="hero-subtitle">Sizni kutib qolamiz!</p>
+      <h1 class="hero-names"
+        style="font-size:clamp(3.2rem,8vw,5.5rem);line-height:1.1;display:flex;flex-direction:column;align-items:center;gap:5px">
+        <span>Xusniddin</span>
+        <span style="font-size:0.6em;color:var(--gold);font-family:'Inter',sans-serif;font-weight:300">&amp;</span>
+        <span>Gulchehra</span>
+      </h1>
+      <p class="hero-date" style="font-size:clamp(1.2rem,3vw,1.8rem); line-height: 1.4">15 Sentabr 2026 <br> <span
+          style="font-size:0.85em; opacity: 0.9">Soat 19:00</span></p>
+      <div class="hero-countdown" id="heroCountdown">
+        <div class="cbox"><span class="cnum" id="days">00</span><span class="clbl">Kun</span></div>
+        <div class="cbox"><span class="cnum" id="hours">00</span><span class="clbl">Soat</span></div>
+        <div class="cbox"><span class="cnum" id="minutes">00</span><span class="clbl">Daqiqa</span></div>
+        <div class="cbox"><span class="cnum" id="seconds">00</span><span class="clbl">Soniya</span></div>
+      </div>
+      <a href="#about" class="hero-btn">
+        <span>Batafsil Ma'lumot</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ============ INFO SPLIT ============ -->
+  <section class="info-split" id="about">
+    <!-- LEFT: About -->
+    <div class="info-card reveal-left"
+      style="background: var(--cream); border: 1.5px solid var(--gold-soft); border-radius: 24px; margin: clamp(10px, 3vw, 30px); padding: clamp(30px, 5vw, 60px); display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 10px 40px rgba(0,0,0,0.02)">
+
+      <div
+        style="font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 25px; text-align: center;">
+        HURMATLI AZIZ MEHMONIMIZ
+      </div>
+
+      <div style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 35px;">
+        <div style="height: 1px; width: 50px; background: var(--gold-soft);"></div>
+        <svg viewBox="0 0 24 24" width="12" height="12" fill="var(--gold-soft)">
+          <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9Z" />
+        </svg>
+        <div style="height: 1px; width: 50px; background: var(--gold-soft);"></div>
+      </div>
+
+      <p
+        style="text-align: center; font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: clamp(1.1rem, 2.5vw, 1.3rem); color: var(--dark); line-height: 1.9; margin: 0;">
+        Sizni nikoh to'yi munosabati bilan o'tkaziladigan tantanali to'y marosimiga taklif etamiz.
+      </p>
+      <p
+        style="text-align: center; font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: clamp(1.1rem, 2.5vw, 1.3rem); color: var(--dark); line-height: 1.9; margin-top: 15px;">
+        Hayotimizning eng go'zal va baxtli kunida sizni yonimizda ko'rishni istardik. Sizning ishtirokingiz bizning
+        baxtimizni yanada cheksiz qiladi.
+      </p>
+      <p
+        style="text-align: center; font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: clamp(1.1rem, 2.5vw, 1.3rem); color: var(--dark); line-height: 1.9; margin-top: 15px;">
+        Oilaviy hayotimizning boshlanishiga guvoh bo'lishingizni chin dildan kutamiz!
+      </p>
+
+      <div
+        style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-top: 35px; margin-bottom: 25px;">
+        <div style="height: 1px; width: 50px; background: var(--gold-soft);"></div>
+        <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--gold-soft);"></div>
+        <div style="height: 1px; width: 50px; background: var(--gold-soft);"></div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT: Event Details -->
+    <div class="info-card reveal-right" id="venue">
+      <svg class="leaf-decor bottom-left" viewBox="0 0 80 80" fill="none" stroke="#b8860b" stroke-width="0.5">
+        <path d="M60 5 Q75 20 65 40 Q55 60 35 55 Q15 50 20 30 Q25 10 45 15 Q65 20 55 40" />
+        <path d="M10 70 Q20 55 35 60 Q50 65 45 75" />
+      </svg>
+      <div class="section-header" style="text-align:left">
+        <div class="label">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          TADBIR TAFSILOTLARI
+        </div>
+        <h2>To'yxona</h2>
+        <div class="gold-line"></div>
+      </div>
+
+      <!-- VENUE IMAGE -->
+      <img src="images/asr.jpg" alt="Asr to'yxonasi"
+        style="width:100%; height:clamp(180px, 30vw, 250px); object-fit:cover; object-position:center 18%; border-radius:12px; margin-bottom:20px; border: 1px solid var(--gold-soft); cursor: pointer;"
+        class="reveal-scale" onclick="openLB(0)">
+
+      <div class="event-detail">
+        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg></div>
+        <div class="detail-text">
+          <h4>15-Sentabr, 2026</h4>
+          <p>Soat 19:00</p>
+        </div>
+      </div>
+      <div class="event-detail">
+        <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg></div>
+        <div class="detail-text">
+          <h4>Manzil</h4>
+          <p>To'yxona: Asr to'yxonasi<br>Mo'ljal: Istanbul bozor</p>
+        </div>
+      </div>
+
+      <!-- GOOGLE MAP EMBED -->
+      <div class="mini-map reveal-scale stagger-3">
+        <iframe src="https://maps.google.com/maps?q=41.5743422,60.6087958&t=&z=17&ie=UTF8&iwloc=&output=embed"
+          style="border:0;width:100%;height:100%" allowfullscreen loading="lazy"></iframe>
+      </div>
+
+      <!-- NAVIGATOR LINKS -->
+      <div class="nav-links-map" style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px">
+        <a href="https://yandex.uz/maps/?rtext=~41.5743422%2C60.6087958&rtt=auto&z=17" target="_blank" class="btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <span>Yandex karta orqali borish</span>
+        </a>
+        <a href="https://maps.app.goo.gl/JxobDN26m4WBm2QG8" target="_blank" class="btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6" />
+            <line x1="8" y1="2" x2="8" y2="18" />
+            <line x1="16" y1="6" x2="16" y2="22" />
+          </svg>
+          <span>Google karta orqali borish</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SMOOTH TRANSITION -->
+  <div style="height:80px;background:linear-gradient(to bottom, #fff, var(--cream));"></div>
+
+  <!-- ============ TIMELINE STANDALONE ============ -->
+  <section style="padding:clamp(20px,4vw,40px) clamp(20px,5vw,80px);background:var(--cream);text-align:center">
+    <div class="timeline reveal stagger-1" style="max-width:500px;margin:0 auto">
+      <div class="timeline-item">
+        <h4>Nikoh marosimi</h4>
+        <p style="font-size: clamp(1.2rem, 3.5vw, 1.4rem);">15-Sentabr, 2026</p>
+      </div>
+      <div class="timeline-item">
+        <h4>To'y dasturi</h4>
+        <p style="font-size: clamp(1.2rem, 3.5vw, 1.4rem);">Soat 19:00 da boshlanadi</p>
+      </div>
+    </div>
+    <div style="margin-top:40px;display:flex;justify-content:center">
+      <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Xusniddin+%26+Gulchehra+Nikoh+To%27yi&dates=20260915T140000Z/20260915T180000Z&details=Sizni+hayotimizning+eng+go%27zal+va+baxtli+kunida+%E2%80%94+nikoh+to%27yimizda+qatnashib,+bizni+duo+qilishingizni+so%27rab+qolamiz.&location=Asr+to%27yxonasi,+Istanbul+bozor"
+        target="_blank" class="btn-outline">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+          <line x1="16" y1="2" x2="16" y2="6" />
+          <line x1="8" y1="2" x2="8" y2="6" />
+          <line x1="3" y1="10" x2="21" y2="10" />
+          <path d="M12 14h.01M16 14h.01M8 14h.01" />
+        </svg>
+        <span>Kunni belgilab qo'yish</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-btn lb-close" onclick="closeLB()"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg></button>
+    <img id="lbImg" src="" alt="">
+  </div>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-line"></div>
+    <p class="reveal stagger-1">15-Sentabr, 2026 • Sizni kutamiz!</p>
+    <p class="reveal stagger-2" style="margin-top:12px">© 2026 | Xusniddin</p>
+  </footer>
+
+  <script>
+    /* ===== COUNTDOWN ===== */
+    const W = new Date('2026-09-15T19:00:00').getTime();
+    function tick() {
+      const d = W - Date.now();
+      if (d <= 0) { document.getElementById('heroCountdown').innerHTML = '<p style="font-family:Great Vibes,cursive;font-size:1.5rem;color:var(--gold)">To\'y boshlanmoqda!</p>'; return }
+      const D = Math.floor(d / 864e5), H = Math.floor(d % 864e5 / 36e5), M = Math.floor(d % 36e5 / 6e4), S = Math.floor(d % 6e4 / 1e3);
+      document.getElementById('days').textContent = String(D).padStart(2, '0');
+      document.getElementById('hours').textContent = String(H).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(M).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(S).padStart(2, '0');
+    }
+    tick(); setInterval(tick, 1000);
+
+    /* ===== SCROLL REVEAL ANIMATIONS ===== */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target) }
+      });
+    }, { threshold: .1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale').forEach(el => io.observe(el));
+
+    /* ===== LIGHTBOX ===== */
+    const imgs = ['images/asr.jpg'];
+    let ci = 0;
+    function openLB(i) { ci = i; document.getElementById('lbImg').src = imgs[i]; document.getElementById('lightbox').classList.add('active'); document.body.style.overflow = 'hidden' }
+    function closeLB() { document.getElementById('lightbox').classList.remove('active'); document.body.style.overflow = '' }
+    document.getElementById('lightbox').addEventListener('click', function (e) { if (e.target === this) closeLB() });
+    document.addEventListener('keydown', function (e) { if (!document.getElementById('lightbox').classList.contains('active')) return; if (e.key === 'Escape') closeLB(); });
+
+    /* ===== MAP SWITCH ===== */
+    function switchMap(t, b) {
+      document.querySelectorAll('.map-container').forEach(m => m.classList.remove('active'));
+      document.querySelectorAll('.map-tab').forEach(x => x.classList.remove('active'));
+      document.getElementById(t + '-map').classList.add('active'); b.classList.add('active');
+    }
+
+    /* ===== MUSIC — auto play after 2 seconds ===== */
+    const audio = document.getElementById('bgMusic'), mb = document.getElementById('musicBtn');
+    let playing = false;
+    const icoPlay = '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><div class="music-wave"></div>';
+    const icoMute = '<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg><div class="music-wave"></div>';
+    function startMusic() {
+      if (!playing) {
+        audio.play().then(() => {
+          playing = true; mb.innerHTML = icoMute; mb.classList.add('playing');
+          // Muvaffaqiyatli ishga tushganda listenerlarni o'chiramiz
+          document.removeEventListener('click', autoStart);
+          document.removeEventListener('touchstart', autoStart);
+          document.removeEventListener('scroll', autoStart);
+        }).catch(() => { })
+      }
+    }
+    function toggleMusic() {
+      if (playing) { audio.pause(); mb.innerHTML = icoPlay; mb.classList.remove('playing'); playing = false }
+      else { audio.play().catch(() => { }); mb.innerHTML = icoMute; mb.classList.add('playing'); playing = true }
+    }
+    mb.addEventListener('click', toggleMusic);
+    // Auto-play immediately on page load
+    startMusic();
+    // Fallback: retry on first user interaction if browser blocked autoplay
+    function autoStart() { startMusic(); }
+    document.addEventListener('click', autoStart);
+    document.addEventListener('touchstart', autoStart, { passive: true });
+    document.addEventListener('scroll', autoStart, { passive: true });
+
+    /* ===== NAV SHOW ON SCROLL ===== */
+    const nav = document.getElementById('mainNav'), hero = document.getElementById('home');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('visible', window.scrollY > hero.offsetHeight * 0.6);
+    }, { passive: true });
+
+    /* ===== PARTICLES ===== */
+    (function () { const c = document.getElementById('particles'); for (let i = 0; i < 15; i++) { const p = document.createElement('div'); p.className = 'particle'; p.style.left = Math.random() * 100 + '%'; const s = Math.random() * 3 + 2; p.style.width = p.style.height = s + 'px'; p.style.animationDuration = (Math.random() * 12 + 10) + 's'; p.style.animationDelay = (Math.random() * 15) + 's'; p.style.opacity = Math.random() * .2 + .05; c.appendChild(p) } })();
+
+    /* ===== PARALLAX HERO PHOTO ===== */
+    const heroPhoto = document.querySelector('.hero-photo img');
+    window.addEventListener('scroll', () => {
+      const s = window.scrollY;
+      if (s < window.innerHeight) { heroPhoto.style.transform = 'scale(' + (1 + s * 0.0003) + ') translateY(' + s * 0.15 + 'px)' }
+    }, { passive: true });
+  </script>
+</body>
+
+</html>
